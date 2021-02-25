@@ -1,0 +1,14 @@
+def difsq(n, e):
+    sum = 0
+    square = 0
+    for i in range(n+1):
+        sum = sum + (i ** e)
+
+    for i in range(n + 1):
+        square = square + i
+        squaresum = square ** e
+
+    difference = squaresum - sum
+    print(difference)
+
+difsq(100, 2)
